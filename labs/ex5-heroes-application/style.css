@@ -1,0 +1,126 @@
+:root {
+  --primary-color: #495057;
+  --red-color: #d8232a;
+  --black-color: #011018;
+  --light-black-color: #42424280;
+  --light-grey-color: #ffffff99;
+  --grey-color: #484848;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  background: var(--black-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: #fff;
+}
+
+#logo {
+  margin: 4rem;
+}
+
+#heroes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero {
+  box-shadow: 1px 1px 2px var(--light-grey-color);
+  background-color: var(--light-black-color);
+  border: 1px solid var(--grey-color);
+  border-radius: 4px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.hero > img {
+  width: 200px;
+  height: 200px;
+}
+
+.hero > h3 {
+  color: #fff;
+
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.hero:hover {
+  background: var(--black-color);
+}
+
+form {
+  margin-top: 5rem;
+  display: none;
+}
+
+form.visible {
+  display: block;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  display: block;
+  width: 50vw;
+  padding: 0.37rem 0.7rem;
+
+  font-size: 1rem;
+  line-height: 1.5;
+
+  outline: none;
+
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+button {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5;
+
+  padding: 0.37rem 0.7rem;
+  border-radius: 0.25rem;
+  border: none;
+
+  cursor: pointer;
+}
+
+button:active {
+  border: none;
+}
+
+#update {
+  float: right;
+  background-color: var(--red-color);
+}
+
+#delete {
+  float: left;
+  color: var(--red-color);
+  background-color: initial;
+  padding-left: 0;
+}

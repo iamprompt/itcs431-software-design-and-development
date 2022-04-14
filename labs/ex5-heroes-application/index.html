@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Marvel Super Heroes</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <img id="logo" src="./assets//marvel.png" alt="Marvel logo" />
+
+    <!-- All heroes will be displayed in the div below-->
+    <div id="heroes"></div>
+
+    <!-- A From for updating and deleting a hero-->
+    <form id="form">
+      <div class="input-group">
+        <label for="name">Hero name</label>
+        <input name="name" type="text" id="name" />
+      </div>
+      <div class="input-group">
+        <label for="superpower">Superpower</label>
+        <input name="superpower" type="text" id="superpower" />
+      </div>
+      <button id="update">Update</button>
+      <button id="delete">Delete</button>
+    </form>
+
+    <script src="./apis.js"></script>
+    <script src="./start.js"></script>
+  </body>
+</html>
